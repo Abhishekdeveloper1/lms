@@ -1,0 +1,16 @@
+{
+    "name": "abhishek/lms",
+    "description": "lms management",
+    "autoload": {
+        "psr-4": {
+            "LMS\\": "src/"
+        },
+        "files": ["src/helper.php"]
+    },
+    "authors": [
+        {
+            "name": "Abhishek kumar jha"
+        }
+    ],
+    "require": {}
+}
