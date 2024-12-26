@@ -12,15 +12,20 @@ spl_autoload_register(function($class){
 	$classFile = str_replace("\\", DIRECTORY_SEPARATOR, $class.'.php');
 
 	$classPath = APP_ROOT.'/src/'.$classFile;
-   
+//    exit('alaka');
 	if(file_exists($classPath)){
 		require_once($classPath);
 	}
 });
 
 // asset('extra-libs/c3/c3.min.css');
-view('admin.maincontent');
+// $data['val']='abhishek';
+// $data['val1']='abhisheks';
 
+// view('admin.dashboard',$data,true);
+// view('auth.login',$data,false);
+
+/*
 use LMS\config\Database;
 
 try {
@@ -35,3 +40,10 @@ try {
 } catch (\Exception $e) {
     echo "Error: " . $e->getMessage();
 }
+*/
+// echo APP_ROOT.'/routes/routes.php';die;
+use LMS\services\Routes;
+$route = new Routes();
+// print_r($route);die;
+require_once(APP_ROOT.'/routes/routes.php');
+$route->handle();
