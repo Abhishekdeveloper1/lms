@@ -32,7 +32,7 @@ class Routes{
         // $requestURI = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // Remove query strings if present
 
 		$requestMethod = $_SERVER['REQUEST_METHOD'];
-        echo $requestURI;echo '<br>';
+        // echo $requestURI;echo '<br>';
 
 		foreach(self::$routes as $route){
 			// echo $route['uri'];die;

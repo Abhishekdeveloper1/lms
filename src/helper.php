@@ -69,7 +69,7 @@ function pageAdd($file_path){
 	include(APP_ROOT.'/views/'.$file_path);
 }
 function redirect($url){
-
+exit($url);
 	header("Location: $url");
 	exit();
 }
@@ -113,4 +113,14 @@ function asset($file_path)
 
     // Return the full URL
     return $protocol . '://' . $host . $basePath . '/' . $file_path;
+}
+
+
+function checkSession() {
+    session_start(); // Start the session
+    if (empty($_SESSION['user_id'])) {
+        // Redirect to the login page if no user session exists
+        header('Location: /');
+        exit(); // Stop further execution
+    }
 }

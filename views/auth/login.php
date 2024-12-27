@@ -56,14 +56,14 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Username</label>
-                                        <input class="form-control" id="uname" type="text"
+                                        <input class="form-control" name="email" id="uname" type="text"
                                             placeholder="enter your username">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="pwd">Password</label>
-                                        <input class="form-control" id="pwd" type="password"
+                                        <input class="form-control" name="password" id="pwd" type="password"
                                             placeholder="enter your password">
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@
                                     <button type="submit" class="btn btn-block btn-dark">Sign In</button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Don't have an account? <a href="#" class="text-danger">Sign Up</a>
+                                    Don't have an account? <a href="register" class="text-danger">Sign Up</a>
                                 </div>
                             </div>
                         </form>

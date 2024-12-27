@@ -48,28 +48,28 @@
                     <div class="p-3">
                         <img src="<?php echo asset("images/big/icon.png")?>" alt="wrapkit">
                         <h2 class="mt-3 text-center">Sign Up for Free</h2>
-                        <form class="mt-4">
+                        <form class="mt-4" action="saveRegister" method="post">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="text" placeholder="your name">
+                                        <input class="form-control" name="name" type="text" placeholder="your name">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="email" placeholder="email address">
+                                        <input class="form-control" name="email" type="email" placeholder="email address">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input class="form-control" type="password" placeholder="password">
+                                        <input class="form-control" name="password" type="password" placeholder="password">
                                     </div>
                                 </div>
                                 <div class="col-lg-12 text-center">
                                     <button type="submit" class="btn btn-block btn-dark">Sign Up</button>
                                 </div>
                                 <div class="col-lg-12 text-center mt-5">
-                                    Already have an account? <a href="#" class="text-danger">Sign In</a>
+                                    Already have an account? <a href="/" class="text-danger">Sign In</a>
                                 </div>
                             </div>
                         </form>
